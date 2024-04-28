@@ -22,7 +22,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.loginapps.nav.navButton
 
 @Composable
 fun AppVerifNumber(
@@ -36,7 +35,7 @@ fun AppVerifNumber(
     ) {
         FloatingActionButton(
             onClick = {
-                navController.navigate(navButton.Phone.route)
+                navController.navigate("Phone")
             },
             containerColor = Color.White
         ) {
@@ -98,7 +97,7 @@ fun AppVerifNumber(
             Spacer(Modifier.height(36.dp))
             FloatingActionButton(
                 onClick = {
-                    navController.navigate(navButton.Information.route)
+                    navController.navigate("Information")
                 },
                 shape = RoundedCornerShape(15.dp),
                 containerColor = MaterialTheme.colorScheme.primaryContainer,

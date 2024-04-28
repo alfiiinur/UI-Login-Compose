@@ -22,8 +22,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.loginapps.nav.RooteNav
-import com.example.loginapps.nav.navButton
 
 @Composable
 fun AppInformation(
@@ -37,7 +35,7 @@ fun AppInformation(
     ) {
         FloatingActionButton(
             onClick = {
-                navController.navigate(navButton.Verif.route)
+                navController.navigate("Verif")
             },
             containerColor = Color.White
         ){
@@ -89,7 +87,7 @@ fun AppInformation(
             Spacer(Modifier.height(10.dp))
             FloatingActionButton(
                 onClick = {
-                    navController.navigate(navButton.Main.route)
+                    navController.navigate("Main")
                 },
                 shape = RoundedCornerShape(15.dp),
                 containerColor = MaterialTheme.colorScheme.primaryContainer,
